@@ -1,0 +1,375 @@
+.ehf-header #masthead {
+	position: sticky;
+	top: 0;
+	background: #fff;
+}
+.d-block {
+	display: block;
+}
+.d-inline {
+	display: inline;
+}
+.d-none {
+	display: none;
+}
+.d-flex {
+	display: flex;
+}
+.d-inline-block {
+	display: inline-block;
+}
+.ms-auto, .mx-auto {
+	margin-left: auto;
+}
+.me-auto, .mx-auto {
+	margin-right: auto;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.w-25 {
+    width: 25%;
+}
+.w-33 {
+    width: 33.33333333%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-66 {
+    width: 66.66666667%;
+}
+.w-75 {
+    width: 75%;
+}
+.w-100 {
+    width: 100%;
+}
+.text-start {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-end {
+	text-align: right;
+}
+.gap-1 {
+    gap: 0.25rem;
+}
+.gap-2 {
+    gap: 0.5rem;
+}
+.gap-3 {
+    gap: 1rem;
+}
+.gap-4 {
+    gap: 1.5rem;
+}
+.gap-5 {
+    gap: 3rem;
+}
+.error {
+    display: none;
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+}
+.error, .error.failed {
+    color: #ff0000;
+}
+.error.success {
+    color: #008000;
+}
+.loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 5;
+}
+.loading .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+  
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.btn, a.btn, button.btn {
+	transition: all 0.3s ease;
+}
+.elementor a.btn, .elementor a.btn:hover {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+input, textarea, select, .input-control, input.input-control, textarea.input-control, select.input-control {
+    display: block;
+    width: 100%;
+    padding: 8px 25px;
+    border: 1px solid rgba(38, 65, 81, 0.4);
+}
+input, textarea, select, .input-control, input.input-control, textarea.input-control, select.input-control, input:focus, textarea:focus, select:focus, .input-control:focus, input.input-control:focus, textarea.input-control:focus, select.input-control:focus {
+    border-style: solid!important;
+}
+input:focus, textarea:focus, select:focus, .input-control:focus, input.input-control:focus, textarea.input-control:focus, select.input-control:focus {
+    border-color: var(--primary-green);
+}
+.col-share .btn, .btn-submit, .btn-share, .btn.btn-share, .btn-preview, .btn.btn-preview {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 16px;
+    background: var(--primary-green);
+    color: var(--primary-white);
+    border-radius: 6px;
+}
+.col-share .btn {
+    line-height: 24px;
+}
+a.btn.disabled, button.btn.disabled {
+    pointer-events: none;
+    filter: grayscale(1);
+    background: var(--primary-green)!important;
+    color: var(--primary-white)!important;
+}
+.btn, .site-admin .btn, .btn.btn-submit {
+    padding: 10px 16px;
+    margin: 0;
+}
+.col-share .btn-preview {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-share .btn i, a.btn i, button.btn i {
+    font-size: inherit;
+    line-height: inherit;
+}
+#sa-login-button .elementor-button-text, .btn-share span, .btn.btn-share span, .btn-preview span, .btn.btn-preview span {
+    transform: translateY(2px);
+}
+.btn-share:hover, .btn.btn-share:hover, .btn-preview:hover, .btn.btn-preview:hover, .btn.btn-submit:hover {
+    background-color: #000;
+}
+.btn-white, .text-white, .btn-wrapper a.btn-white, .btn.btn-preview, .btn.btn-preview:hover i, .btn.btn-submit:hover {
+	color: #fff;
+}
+button.btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 0;
+    background: transparent;
+    z-index: 9;
+}
+button.btn-close:hover {
+    opacity: 0.9;
+    background: #eee;
+}
+button.btn-close::before, button.btn-close::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: var(--primary-green);
+    top: 50%;
+    left: 50%;
+}
+button.btn-close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+button.btn-close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.archive {
+    background: #fff;
+}
+.elementor-widget-hfe-site-title .elementor-widget-heading a {
+    text-decoration: none;
+}
+.share-popup {
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 100%;
+    z-index: 99;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 12px;
+    background: #bebebe;
+    border-radius: 8px;
+}
+.share-close {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -20px;
+    right: -20px;
+    border-radius: 15px;
+    border: 1px solid #bbb;
+    padding: 0;
+}
+.share-close, .btn-copy {
+    background: #fff;
+    color: var(--primary-green);
+}
+.share-close:hover, .btn-copy:hover {
+    background: var(--primary-green);
+    color: var(--primary-white);
+}
+.share-close i {
+    font-size: 14px;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.share-popup .share-input {
+    width: max-content;
+}
+.btn-copy {
+    font-size: 14px;
+    line-height: 1;
+    padding: 8px 16px;
+}
+.obituary-slider .swiper-slide {
+    width: 210px;
+}
+.obituary-slider, .obituary-slider * {
+    position: relative;
+}
+.obituary-slider .obituary-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 13px;
+    background-color: rgba(38, 65, 81, 0.6);
+    color: #fff;
+    text-align: right;
+}
+.obituary-thumbnail {
+	overflow: hidden;
+}
+.obituary-thumbnail img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	transform-origin: center center;
+	transition: all 0.5s ease;
+}
+.obituary-slider .obituary-slide-inner:hover img {
+	transform: scale(1.15);
+}
+.obituary-name {
+    font-size: var(--paragraph);
+    line-height: var(--paragraph-line-height);
+    font-weight: 300;
+}
+.obituary-dates {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.user-review-slider-container .user-review-nav {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	padding: 0;
+	background: #D9C8B1;
+	color: #fff;
+	z-index: 5;
+}
+.user-review-slider-container .user-review-nav, .user-review-slider-container .user-review-nav:hover, .user-review-slider-container .user-review-nav:focus, .user-review-slider-container .user-review-nav:active {
+	outline: none;
+}
+.user-review-slider-container .user-review-nav.nav-prev {
+	left: 0;
+}
+.user-review-slider-container .user-review-nav.nav-next {
+	right: 0;
+}
+.user-review-slider {
+	width: 100%;
+}
+.user-review-slide {
+    text-align: center;
+	height: auto;
+	padding: 5px;
+}
+.user-review-slide-inner, .user-review-content {
+	display: flex;
+	flex-direction: column;
+}
+.user-review-slide-inner {
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.25);
+	border-radius: 10px;
+	overflow: hidden;
+	height: 100%;
+}
+.user-review-content {
+	padding: 24px;
+	padding-top: 32px;
+	gap: 24px;
+	justify-content: space-between;
+	flex: 1;
+}
+.user-review-header {
+	display: block;
+	width: 100%;
+	padding: 18px 24px;
+	font-size: 20px;
+	line-height: 24px;
+	background: #4F7889;
+	color: #fff;
+}
+.grid-gallery {
+    
+}
+.grid-gallery .grid-item {
+    width: calc(25% - 15px);
+    margin-bottom: 20px;
+}
+.grid-gallery-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.grid-gallery, .grid-gallery-container .btn-wrapper {
+	width: 100%;
+}

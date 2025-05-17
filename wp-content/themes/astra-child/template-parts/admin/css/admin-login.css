@@ -1,0 +1,109 @@
+#admin-content #primary {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#admin-content .loading {
+    background: rgba(0,0,0, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255, 0.8);
+}
+#admin-content .loading .loader {
+    border-color: var(--primary-green);
+}
+#admin-content #primary > section {
+    flex: 1;
+}
+.app-card, .app-card h2, .app-card h3, .app-card h4, .app-card h5, .app-card h6 {
+    color:  #000;
+}
+.app-card p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.app-card {
+    display: block;
+    max-width: 375px;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
+}
+.app-card, .app-row {
+    height: 100%;
+}
+.app-row {
+    display: flex;
+    flex-direction: column;
+}
+.app-col {
+    padding: 35px;
+    height: 50%;
+    transition: all 0.5s ease;
+}
+.app-col.app-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.app-card.registration-step-2 .app-col.app-header {
+    height: 240px;
+}
+.app-header .app-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 50px;
+    padding-right: 25%;
+}
+.app-card.registration-step-2 .app-col.app-body {
+    flex: 1;
+}
+.app-body .app-title h3 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+.app-body .app-title {
+    margin-bottom: 30px;
+}
+.signin-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.signin-option, .signin-option .btn {
+    display: flex;
+    width: 100%;
+}
+.signin-option .btn {
+    font-size: 16px;
+    line-height: 1;
+    padding: 14px 16px;
+    text-align: center;
+    border-radius: 10px;
+}
+.login-form-wrapper {
+    padding-top: 15px;
+}
+.login-form .wp-row-submit .btn.btn-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app-card .wp-form-group, #registration-form .wp-form-group {
+    margin-bottom: 12px;
+}
+.app-card .wp-form-row.wp-row-submit, #registration-form .wp-form-row.wp-row-submit {
+    padding-top: 12px;
+}
+@media (min-width: 1600px) {
+    .app-card {
+        max-height: 768px;
+        min-height: 600px;
+    }
+}
